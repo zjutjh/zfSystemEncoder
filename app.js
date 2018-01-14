@@ -17,9 +17,9 @@ app.use(async (ctx)=>{
     let enPassword=null;
     let password=req_query.password;
     let exponent=req_query.exponent;
-    let modulus=req_query.modulus;
-    if(password&&exponent&&modulus){
-        rsaKey.setPublic(b64tohex(modulus),b64tohex(exponent));
+    let modules=req_query.modules;
+    if(password&&exponent&&modules){
+        rsaKey.setPublic(b64tohex(modules),b64tohex(exponent));
         enPassword=hex2b64(rsaKey.encrypt(password));
     }else{
         enPassword='no enough params';
