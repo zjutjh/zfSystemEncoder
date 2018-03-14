@@ -4,12 +4,16 @@
   "description": "正方系统解密程序",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "louisian",
   "license": "ISC",
   "dependencies": {
+    "glob": "^7.1.2",
+    "graphicsmagick": "0.0.1",
     "koa": "^2.4.1",
-    "koa-router": "^7.4.0"
+    "koa-router": "^7.4.0",
+    "tesseract.js": "^1.0.10"
   }
 }
